@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+	float: top;
+	margin: 0 auto;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: 3px #cccccc solid;
+	padding: 10px;
+	background: #ffffff;
+	width: 70%;
+}
+
+h1 {
+	background: #4aaaa5;
+	color: #fff;
+	padding: 20px;
+	float: left;
+	margin-right: 120px;
+}
+
+
+#about_button, #portfolio_button, #contact_button {
+	float: left;
+	padding: 20px;
+	margin: 20px 5px 20px 5px;
+	color: #777777;
+
+}
+
+section {
+	background: #ffffff;
+}
+
+/*for main content*/
+.bio, .contact, .portfolio {
+	clear: both;
+	padding: 10px;
+	color: #777777;
+}
+
+h2 {
+	color: #4aaaa5;
+	padding: 20px;
+	clear: both;
+	border-bottom: 2px #cccccc solid;
+	width: 40%;
+}
+
+h3 {
+	color: #4aaaa5;
+	padding: 20px;
+	clear: both;
+	border-bottom: 1px #cccccc solid;
+	width: 40%;
+}
+
+.connect {
+
+}
+
+p {
+	color: #777777;
+
+}
+
+footer {
+	width: 100%;
+	padding: 30px;
+	margin: 0 auto;
+	background: #666666;
+	border-top: 10px #fff solid;
+}
