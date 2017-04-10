@@ -9,13 +9,13 @@ body {
 }
 
 header {
-	float: top;
 	margin: 0 auto;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	border-bottom: 3px #cccccc solid;
-	padding: 10px;
+	border-bottom-width: 100%;
+	padding: 10px 10px 0px 20%;
 	background: #ffffff;
-	width: 70%;
+	overflow: auto;
 }
 
 h1 {
@@ -24,19 +24,35 @@ h1 {
 	padding: 20px;
 	float: left;
 	margin-right: 120px;
+	margin-bottom: 0px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
 
 
 #about_button, #portfolio_button, #contact_button {
 	float: left;
-	padding: 20px;
-	margin: 20px 5px 20px 5px;
+	padding: 0px 20px 0px 20px;
+	margin: 50px 5px 20px 5px;
 	color: #777777;
+	display: inline;
+}
 
+
+#about_button, #portfolio_button {
+	border-right: 1px #777777 solid;
+}
+
+.clearfix::after { 
+	content: ""; 
+	display: block; 
+	clear: both; 
+	margin: 0;
 }
 
 section {
-	background: #ffffff;
+	clear: both;
+	width: 960px;
 }
 
 /*for main content*/
@@ -44,31 +60,60 @@ section {
 	clear: both;
 	padding: 10px;
 	color: #777777;
+	background: #ffffff;
+	margin: 40px;
+	border: 1px #dddddd solid;
+	width: 650px;
+}
+
+.connect { 
+	clear: both;
+	padding: 10px;
+	color: #777777;
+	background: #ffffff;
+	margin: 40px;
+	/*float: right;*/
+	border: 1px #dddddd solid;
+	width: 270px;
 }
 
 h2 {
 	color: #4aaaa5;
 	padding: 20px;
+	margin: 20px;
 	clear: both;
 	border-bottom: 2px #cccccc solid;
-	width: 40%;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
 
 h3 {
 	color: #4aaaa5;
 	padding: 20px;
 	clear: both;
 	border-bottom: 1px #cccccc solid;
-	width: 40%;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.connect {
 
+
+.portfolio {
+	position: relative;
 }
+
 
 p {
 	color: #777777;
+}
 
+.pname {
+	background: #4aaaa5;
+	color: #fff;
+	padding: 20px;
+	position: relative;
+	bottom: 125px;
+	left: 431px;
+	width: 400px;
 }
 
 footer {
@@ -76,5 +121,5 @@ footer {
 	padding: 30px;
 	margin: 0 auto;
 	background: #666666;
-	border-top: 10px #fff solid;
+	border-top: 10px #4aaaa5 solid;
 }
