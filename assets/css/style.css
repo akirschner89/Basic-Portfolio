@@ -18,41 +18,45 @@ header {
 	overflow: auto;
 }
 
+/*What's my name?*/
 h1 {
 	background: #4aaaa5;
 	color: #fff;
 	padding: 20px;
 	float: left;
-	margin-right: 120px;
+	margin-right: 280px;
 	margin-bottom: 0px;
+	margin-left: -100px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 
-
+/*top right directory buttons*/
 #about_button, #portfolio_button, #contact_button {
 	float: left;
 	padding: 0px 20px 0px 20px;
-	margin: 50px 5px 20px 5px;
+	margin: 50px 5px 20px 0px;
 	color: #777777;
 	display: inline;
 }
 
 
 #about_button, #portfolio_button {
-	border-right: 1px #777777 solid;
+	border-right: 1px #E0E0E0 solid;
 }
 
 .clearfix::after { 
 	content: ""; 
 	display: block; 
 	clear: both; 
-	margin: 0;
+	margin: 0 auto;
 }
 
+/*main content formatting*/
 section {
 	clear: both;
 	width: 960px;
+	height: 600px;
 }
 
 /*for main content*/
@@ -61,21 +65,95 @@ section {
 	padding: 10px;
 	color: #777777;
 	background: #ffffff;
-	margin: 40px;
+	margin: 40px 20px 40px 150px;
 	border: 1px #dddddd solid;
-	width: 650px;
+	width: 550px;
 }
 
-.connect { 
+.contact {
+    height: 500px;
+}
+
+/*for contact page*/
+.label {
+	font-size: 20px;
+	float: left;
+	margin: 5px;
+}
+
+#name {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: left;
+}
+
+#email {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: left;
+}
+
+#msg {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 0px 50px 50px 0px;
+	height: 100px;
+	text-align: left;
+}
+
+button {
+	background: #4aaaa5;
+	color: #fff;
+	padding: 20px;
+	float: left;
+	/*font-family: 'Georgia', Times, Times New Roman, serif;*/
+	width: 150px;
+	border: 0px white solid;
+	font-size: 20px;
+}
+
+/*sidebar connect with me*/
+.connect1 { 
 	clear: both;
 	padding: 10px;
 	color: #777777;
 	background: #ffffff;
 	margin: 40px;
-	/*float: right;*/
 	border: 1px #dddddd solid;
-	width: 270px;
+	width: 300px;
+	position: relative;
+    left: 720px;
+    bottom: 555px;
 }
+
+.connect2 { 
+	clear: both;
+	padding: 10px;
+	color: #777777;
+	background: #ffffff;
+	margin: 40px;
+	border: 1px #dddddd solid;
+	width: 300px;
+	position: relative;
+    left: 720px;
+    bottom: 542px;
+}
+
+.connect3 { 
+	clear: both;
+	padding: 10px;
+	color: #777777;
+	background: #ffffff;
+	margin: 40px;
+	border: 1px #dddddd solid;
+	width: 300px;
+	position: relative;
+    left: 720px;
+    bottom: 555px;
+}
+
 
 h2 {
 	color: #4aaaa5;
@@ -84,6 +162,11 @@ h2 {
 	clear: both;
 	border-bottom: 2px #cccccc solid;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#profl {
+	float: left;
+	margin-left: 20px;
 }
 
 
@@ -96,7 +179,7 @@ h3 {
 }
 
 
-
+/*portfolio stuff*/
 .portfolio {
 	position: relative;
 }
@@ -104,8 +187,10 @@ h3 {
 
 p {
 	color: #777777;
+	line-height: 2;
 }
 
+/*portfolio names to position on images*/
 .pname {
 	background: #4aaaa5;
 	color: #fff;
@@ -116,6 +201,7 @@ p {
 	width: 400px;
 }
 
+/*footer styling*/
 footer {
 	width: 100%;
 	padding: 30px;
